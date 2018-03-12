@@ -29,20 +29,20 @@ if(path == '/index') {
     "<!DOCTYPE html>" +
     "<html>"+
     "<head>"+
-    "<link rel='stylesheet' href='/style' >"+
+    "<link rel='stylesheet' href='/style.css' >"+
     "</heaed>"+
     "<body>"+
     "<h1>你好</h1>"+
-    '<script src="/script"></script>'+
+    '<script src="/main.js"></script>'+
     "</body>"+
     "</html>");
   response.end();
-}else if(path == '/style') {
+}else if(path == '/style.css') {
   response.setHeader('Content-Type', "text/css");
   response.write(
     "h1 {color: red; text-align: center;}");
   response.end();
-}else if(path == '/script') {
+}else if(path == '/main.js') {
   response.setHeader('Content-Type', "text/script");
   response.write(
     "alert('run js files')");
